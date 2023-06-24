@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="imgs/SiteLogo.png"/>
+
+    <title>Trabalho baião</title>
+</head>
+<body>
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon"class="fa-solid fa-moon"></i>
+            </div>
+            <div id="social_media">
+                <a href="https://www.facebook.com">
+                    <img src="imgs/facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="https://github.com/login">
+                    <img src="imgs/github.png" alt="GitHub Logo">
+                </a>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1728992142%3A1687466404565842&hl=pt-BR&ifkv=Af_xneH7tBD1vfM97HDX4Sp58xrvbcMXfho3XKmAN_OUcd4PzXPxkTsBTRRRA9hhCTjkb0i3Uebpng&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                    <img src="imgs/google.png" alt="Google Logo">
+                </a>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="nome">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">
+                        Email
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="senha">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="senha" name="senha">
+                        </div>
+                    </label>
+
+                    <div id="esqueceu_senha">
+                        <a href="#">
+                            Esqueceu sua senha?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="login_button" onclick="verificarCadastro()">
+                Login
+            </button>
+
+
+        </form>
+    </main>
+    <script type = "text/javascript" src="js/script.js"></script>
+</body>
+</html>
